@@ -1,8 +1,5 @@
 const dataLocal = window.localStorage.getItem("dataForm");
-
 const dataJson = JSON.parse(dataLocal);
-
-// console.log(dataJson);
 
 const createRowTable = (...data) => {
   const element = document.querySelector("#data-tabel-form > tbody");
@@ -13,6 +10,15 @@ const createRowTable = (...data) => {
       item = item.join(", ");
       td.innerText = item;
     } else {
+      if (item === "man") {
+        item = "Laki-laki";
+      } else if (item === "woman") {
+        item = "Perempuan";
+      } else if (item === "true") {
+        item = "Ya";
+      } else if (item === "false") {
+        item = "Tidak";
+      }
       td.innerText = item;
     }
     tr.append(td);
