@@ -32,5 +32,8 @@ dataJson.forEach((data) => {
   const { name, old, gender, isSmoker } = obj;
   const cigar = data.getAll("cigar");
   createRowTable(name, old, gender, isSmoker, cigar);
-  console.log(cigar);
+});
+
+document.getElementById("btn-back").addEventListener("click", (e) => {
+  window.history.back();
 });
