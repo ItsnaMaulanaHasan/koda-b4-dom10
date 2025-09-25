@@ -1,0 +1,42 @@
+* {
+  font-family: Roboto;
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+}
+
+main {
+  height: 100vh;
+  justify-items: center;
+  align-content: center;
+}
+
+#table-container {
+  padding: 20px;
+  min-width: 40%;
+  min-height: 40%;
+  justify-items: center;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+  border-radius: 10px;
+}
+
+/* Table */
+#data-tabel-form {
+  border-spacing: 0;
+}
+
+#data-tabel-form td,
+#data-tabel-form th {
+  padding: 10px;
+}
+
+#data-tabel-form > thead > tr {
+  background-color: #c3c5c5;
+}
+
+#data-tabel-form > tbody > tr:nth-child(even) {
+  background-color: #c3c5c5;
+}
