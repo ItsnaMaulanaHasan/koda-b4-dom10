@@ -8,6 +8,10 @@ body {
   padding: 0;
 }
 
+html {
+  font-size: 16px;
+}
+
 main {
   height: 100vh;
   justify-items: center;
@@ -15,12 +19,15 @@ main {
 }
 
 #table-container {
-  padding: 20px;
+  padding: 1.25rem;
   min-width: 40%;
   min-height: 40%;
-  justify-items: center;
   box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
   border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 2rem;
 }
 
 /* Table */
@@ -34,9 +41,45 @@ main {
 }
 
 #data-tabel-form > thead > tr {
-  background-color: #c3c5c5;
+  background-color: #4589f0;
+  color: #fff;
 }
 
 #data-tabel-form > tbody > tr:nth-child(even) {
-  background-color: #c3c5c5;
+  background-color: #4589f0;
+  color: #fff;
+}
+
+#btn-back {
+  border: none;
+  padding: 0.875rem;
+  border-radius: 10px;
+  align-self: start;
+  font-weight: 500;
+  background-color: #4589f0;
+  color: #fff;
+}
+
+#btn-back:hover {
+  background-color: #2576e8;
+}
+
+#btn-back:active {
+  background-color: #1d6989;
+}
+
+@media (max-width: 800px) {
+  html {
+    font-size: 14px;
+  }
+
+  #table-container {
+    max-width: 90%;
+    max-height: 90%;
+  }
+
+  #table-container > div {
+    width: 100%;
+    overflow-x: auto;
+  }
 }

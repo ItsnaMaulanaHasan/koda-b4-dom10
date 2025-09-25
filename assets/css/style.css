@@ -3,6 +3,10 @@
   box-sizing: border-box;
 }
 
+html {
+  font-size: 16px;
+}
+
 body {
   margin: 0;
   padding: 0;
@@ -16,7 +20,7 @@ main {
 
 /* Form container */
 #form-container {
-  padding: 20px 0;
+  padding: 1.25rem 0;
   min-width: 40%;
 }
 
@@ -24,14 +28,14 @@ main {
 #form-survey {
   display: flex;
   flex-direction: column;
-  gap: 12px;
+  gap: 0.75rem;
 }
 
 #form-survey > div {
   display: flex;
   flex-direction: column;
-  gap: 24px;
-  padding: 30px;
+  gap: 1.5rem;
+  padding: 1.875rem;
   background-color: #fff;
   border-radius: 12px;
 }
@@ -46,17 +50,44 @@ main {
   font-size: 2rem;
 }
 
+#form-survey > div:first-child > div:nth-child(3) {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+#form-survey > div:first-child > div:last-child {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+#form-survey > div > div > div:first-child {
+  font-weight: 500;
+  color: #373737;
+}
+
+#form-survey > div > div > div > a {
+  text-decoration: none;
+  font-weight: normal;
+  color: #377dff;
+}
+
+#form-survey > div > div > img {
+  width: 20px;
+}
+
 hr {
   margin: 0;
-  width: calc(100% + 60px);
-  margin-left: -30px;
+  width: calc(100% + 3.75rem);
+  margin-left: -1.875rem;
   flex-shrink: 0;
 }
 
 /* input */
 #form-survey > div > div:nth-child(2) {
-  padding: 10px 0;
-  gap: 10px;
+  padding: 0.625rem 0;
+  gap: 0.625rem;
 }
 
 /* type, checkbox radio */
@@ -64,7 +95,7 @@ hr {
 .checkbox-wrapper {
   display: flex;
   flex-direction: column;
-  gap: 10px;
+  gap: 0.625rem;
 }
 
 .radio-wrapper > div,
@@ -76,8 +107,8 @@ hr {
 
 .radio-wrapper > div > input,
 .checkbox-wrapper > div > input {
-  width: 20px;
-  height: 20px;
+  width: 1.25rem;
+  height: 1.25rem;
 }
 
 /* type text */
@@ -104,7 +135,7 @@ hr {
 }
 
 #form-survey > div:last-child > button:first-child {
-  padding: 10px 24px;
+  padding: 0.675rem 1.5rem;
   border-radius: 5px;
   border: none;
   background-color: #53b8f8;
@@ -123,7 +154,7 @@ hr {
 }
 
 #form-survey > div:last-child > button:last-child {
-  padding: 10px 24px;
+  padding: 0.625rem 1.5rem;
   border-radius: 5px;
   border: none;
   background-color: transparent;
@@ -133,4 +164,18 @@ hr {
 
 #form-survey > div:last-child > button:last-child:hover {
   background-color: rgb(176, 220, 246, 0.5);
+}
+
+@media (max-width: 800px) {
+  html {
+    font-size: 14px;
+  }
+
+  #form-container {
+    max-width: 95%;
+  }
+
+  #form-container {
+    padding: 3rem 0;
+  }
 }
