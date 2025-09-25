@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Form Survey Perokok</title>
+    <link rel="stylesheet" href="./assets/css/style.css" />
+  </head>
+  <body>
+    <main>
+      <section id="form-container">
+        <form id="form-survey" action="" method="get">
+          <div>
+            <span>Form Survey Perokok</span>
+            <hr />
+          </div>
+          <div>
+            <div>
+              <label for="name">Siapa nama Anda?</label>
+            </div>
+            <div>
+              <input type="text" name="name" id="name" autocomplete="off" required />
+            </div>
+          </div>
+          <div>
+            <div>
+              <label for="old">Berapa umur Anda?</label>
+            </div>
+            <div>
+              <input type="text" name="old" id="old" autocomplete="off" required />
+            </div>
+          </div>
+          <div>
+            <div>
+              <label for="man">Apa jenis kelamin Anda?</label>
+            </div>
+            <div class="radio-wrapper">
+              <div><input type="radio" name="gender" id="man" value="man" required />Laki-laki</div>
+              <div><input type="radio" name="gender" id="woman" value="woman" required />Perempuan</div>
+            </div>
+          </div>
+          <div>
+            <div>
+              <label for="ySmoker">Apakah Anda seorang perokok?</label>
+            </div>
+            <div class="radio-wrapper">
+              <div><input type="radio" name="isSmoker" id="ySmoker" value="true" required />Ya</div>
+              <div><input type="radio" name="isSmoker" id="nSmoker" value="false" required />Tidak</div>
+            </div>
+          </div>
+          <div>
+            <div>
+              <label>Jika Anda perokok, rokok apa yang Anda pernah coba?</label>
+            </div>
+            <div class="checkbox-wrapper">
+              <div><input type="checkbox" name="cigar" value="Gudang Garam Filter" />Gudang Garam Filter</div>
+              <div><input type="checkbox" name="cigar" value="Lucky Strike" />Lucky Strike</div>
+              <div><input type="checkbox" name="cigar" value="Marlboro" />Marlboro</div>
+              <div><input type="checkbox" name="cigar" value="Esse" />Esse</div>
+            </div>
+          </div>
+          <div>
+            <button type="submit">Kirim</button>
+            <button type="reset">Kosongkan formulir</button>
+          </div>
+        </form>
+      </section>
+    </main>
+    <script src="./assets/js/script.js"></script>
+  </body>
+</html>

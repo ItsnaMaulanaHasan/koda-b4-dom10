@@ -1,0 +1,136 @@
+* {
+  font-family: Roboto;
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  background: #c3e6fc;
+}
+
+main {
+  height: 100vh;
+  justify-items: center;
+}
+
+/* Form container */
+#form-container {
+  padding: 20px 0;
+  min-width: 40%;
+}
+
+/* Form */
+#form-survey {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+#form-survey > div {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+  padding: 30px;
+  background-color: #fff;
+  border-radius: 12px;
+}
+
+/* Header */
+#form-survey > div:first-child {
+  border-top: 10px solid #53b8f8;
+}
+
+#form-survey > div > span {
+  font-weight: 500;
+  font-size: 2rem;
+}
+
+hr {
+  margin: 0;
+  width: calc(100% + 60px);
+  margin-left: -30px;
+  flex-shrink: 0;
+}
+
+/* input */
+#form-survey > div > div:nth-child(2) {
+  padding: 10px 0;
+  gap: 10px;
+}
+
+/* type, checkbox radio */
+.radio-wrapper,
+.checkbox-wrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.radio-wrapper > div,
+.checkbox-wrapper > div {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+
+.radio-wrapper > div > input,
+.checkbox-wrapper > div > input {
+  width: 20px;
+  height: 20px;
+}
+
+/* type text */
+#form-survey > div > div > input {
+  border: none;
+  padding: 5px 0;
+  min-width: 60%;
+  border-bottom: 2px solid #e1ebf0;
+  transition: all 0.5s;
+}
+
+#form-survey > div > div > input:focus {
+  outline: none;
+  border-color: #53b8f8;
+}
+
+/* button */
+#form-survey > div:last-child {
+  display: flex;
+  flex-direction: row;
+  padding: 0;
+  background-color: transparent;
+  justify-content: space-between;
+}
+
+#form-survey > div:last-child > button:first-child {
+  padding: 10px 24px;
+  border-radius: 5px;
+  border: none;
+  background-color: #53b8f8;
+  color: #fff;
+  cursor: pointer;
+  transition: all 0.5s;
+}
+
+#form-survey > div:last-child > button:first-child:hover {
+  background-color: #35a9f0;
+  transform: scale(1.02);
+}
+
+#form-survey > div:last-child > button:first-child:active {
+  background-color: #4292c4;
+}
+
+#form-survey > div:last-child > button:last-child {
+  padding: 10px 24px;
+  border-radius: 5px;
+  border: none;
+  background-color: transparent;
+  color: #009dff;
+  cursor: pointer;
+}
+
+#form-survey > div:last-child > button:last-child:hover {
+  background-color: rgb(176, 220, 246, 0.5);
+}
